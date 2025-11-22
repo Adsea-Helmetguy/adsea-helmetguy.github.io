@@ -7,4 +7,10 @@ createRoot(document.getElementById('body')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
-)
+);
+
+
+/*
+const container = document.getElementById('app');
+const root = createRoot(container);
+*/
