@@ -1,5 +1,9 @@
 {
+<<<<<<<< HEAD:aboutme_project/package.json
   "name": "aboutme_project",
+========
+  "name": "personal_website",
+>>>>>>>> 3ba1535e46920f63d19d526c3af5ca7017781463:personal_website/package.json
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +15,10 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.17",
+<<<<<<<< HEAD:aboutme_project/package.json
+========
+    "bootstrap": "^5.3.8",
+>>>>>>>> 3ba1535e46920f63d19d526c3af5ca7017781463:personal_website/package.json
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.1.17"
