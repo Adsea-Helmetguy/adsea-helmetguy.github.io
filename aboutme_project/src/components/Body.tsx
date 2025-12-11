@@ -19,10 +19,12 @@ export const AppBody = () => {
 
   return (
     <>
-      <div className="grid place-items-center h-100vh w-screen border border-yellow-800">
+      <div className="grid place-items-center border min-h-screen border-yellow-800">
         <div className="grid grid-rows-3 gap-8">
           <div className="flex justify-center items-center">
-            <h1>Hello and Welcome to my Portofilo!</h1>
+            <h1 className="text-center text-balance">
+              Hello and Welcome to my Portofilo!
+            </h1>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-2xl">Programming languages that i use:</p>
