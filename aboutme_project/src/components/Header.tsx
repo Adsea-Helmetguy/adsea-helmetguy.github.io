@@ -2,10 +2,10 @@
 
 export const AppHeader = () => {
   return (
-    <div className="grid grid-cols-2 fixed border border-blue-800 backdrop-blur-md min-w-screen">
-      <div className="grid grid-col-2">
-        <div className="font-bold text-lg">Image</div>
-        <div className="grid grid-cols-3 gap-6 justify-end text-right">
+    <div className="fixed border border-orange-800 backdrop-blur-md min-w-screen bg-gray-800">
+      <div className="grid grid-rows-2">
+        <p className="font-bold text-lg">Image</p>
+        <div className="flex flex-row justify-end text-center gap-1">
           <div className="cursor-pointer hover:text-blue-600 transition-colors">
             About Me
           </div>

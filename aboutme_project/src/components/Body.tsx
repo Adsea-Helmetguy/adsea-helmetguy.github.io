@@ -7,6 +7,7 @@ import "../App.css";
 
 export const AppBody = () => {
   const [visible, setVisible] = useState(false);
+  //const toRotate = [ "Frontend Developer", "inspiring Full stack developer" ];
 
   //useEffect runs AFTER the entire code finish rendering.
   useEffect(() => {
