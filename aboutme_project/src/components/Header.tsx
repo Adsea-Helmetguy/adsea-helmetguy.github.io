@@ -28,18 +28,18 @@ export const AppHeader = () => {
   return (
     <div className="fixed border border-orange-800 backdrop-blur-md min-w-screen bg-gray-900">
       <div className="grid grid-cols-2">
-        <div className="flex justify-start items-center">
-          <a
-            href="https://www.typescriptlang.org/"
-            target="_blank"
-            className="flex flex-row items-center"
-          >
-            <img
-              src={viteLogo2}
-              className="h-10 mt-5 mb-5 ml-3"
-              alt="ViteLogo"
-            />
-            <p className="font-bold text-lg">My Portfolio Website!</p>
+        <div className="flex justify-start items-center h-full">
+          <a href="https://www.typescriptlang.org/" target="_blank">
+            <div className="flex flex-row items-center h-full">
+              <img
+                src={viteLogo2}
+                className="h-10 mt-5 mb-5 ml-3"
+                alt="ViteLogo"
+              />
+              <p className="hidden sm:block font-bold text-lg">
+                My Portfolio Website!
+              </p>
+            </div>
           </a>
         </div>
         <div className="flex flex-row justify-end items-center font-bold">

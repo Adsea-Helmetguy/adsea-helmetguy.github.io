@@ -22,10 +22,14 @@ export const AppBody = () => {
     <>
       <div className="grid place-items-center border min-h-screen border-yellow-800">
         <div className="grid grid-rows-3 gap-8">
-          <div className="flex justify-center items-center">
-            <h1 className="text-center text-balance">
-              Hello and Welcome to my Portofilo!
-            </h1>
+          <div className="flex flex-col justify-center">
+            <h1 className="font-bold text-left">Hi, I'm Marcus</h1>
+            <p className="max-w-lg text-lg text-left">
+              I am a Frontend Developer Who recently completed the common core
+              at 42 Singapore! I have some experience such as with React,
+              Typescript and TailwindCSS! I look forward to knowing you as you
+              explore my portofilo~
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <p className="text-2xl">Programming languages that i use:</p>
