@@ -3,20 +3,34 @@
 // import viteLogo from "/vite.svg";
 // import typescriptLogo from "/typescript.svg";
 // import tailwindLogo from "/tailwindcss.svg";
-import { AppHeader } from "./components/Header.tsx";
-import { AppBody } from "./components/Body.tsx";
-import "./App.css";
+// import { AppNavBar } from "./components/Navbar.tsx";
+/*
+import { About } from "./components/About/About";
+import { Contact } from "./components/Contact/Contact";
+import { Experience } from "./components/Experience/Experience";
+import { Hero } from "./components/Hero/Hero";
+import { Navbar } from "./components/Navbar/Navbar";
+import { Projects } from "./components/Projects/Projects";
+*/
+import { Navbar } from "./components/Navbar/NavbarTutorial.tsx";
+//import { AppBody } from "./components/Body.tsx";
+import { HeroBody } from "./components/HeroSection/Hero.tsx";
+import styles from "./App.module.css";
 
 function App() {
   return (
     <>
-      <AppHeader />
-      <AppBody />
+      <div className={styles.App}>
+        <Navbar />
+        <HeroBody />
+      </div>
     </>
   );
 }
 
 export default App;
 
+//      {/* <AppNavBar /> */}
+//<AppBody />
 //the drop-shadow is following:"drop-shadow-[<value>]" for custom value
 //When em is used for font-size, it’s based on the parent’s font size, while rem uses root

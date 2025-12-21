@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
 import typescriptLogo from "/typescript.svg";
 import tailwindLogo from "/tailwindcss.svg";
+import viteLogo from "/vite.svg";
+import reactLogo from "../assets/react.svg";
 import "../App.css";
 
 export const AppBody = () => {
@@ -23,12 +23,12 @@ export const AppBody = () => {
       <div className="grid place-items-center border min-h-screen border-yellow-800">
         <div className="grid grid-rows-3 gap-8">
           <div className="flex flex-col justify-center">
-            <h1 className="font-bold text-left">Hi, I'm Marcus</h1>
+            <p className="text-8xl font-bold text-left">Hi, I'm Marcus</p>
             <p className="max-w-lg text-lg text-left">
-              I am a Frontend Developer Who recently completed the common core
-              at 42 Singapore! I have some experience such as with React,
-              Typescript and TailwindCSS! I look forward to knowing you as you
-              explore my portofilo~
+              I am a Frontend Developer and a student at 42 Singapore! I have
+              some experience with coding and uses programming languages such as
+              React, Typescript and TailwindCSS! I look forward to getting to
+              know you as well!👋~
             </p>
           </div>
           <div className="flex flex-col items-center">
@@ -85,7 +85,7 @@ export const AppBody = () => {
           </div>
           <div>
             <p className="top-0">
-              My name is Marcus and i am a frontend web developer!
+              Why not scroll down and see more of my works in progress?
             </p>
           </div>
         </div>
