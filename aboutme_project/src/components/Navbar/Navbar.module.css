@@ -1,7 +1,7 @@
 @import "../../vars.css";
 
 .navbar {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -12,6 +12,7 @@
 
 .title {
   font-size: 30px;
+  margin-right: 850px;
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
@@ -33,11 +34,46 @@
 
 .menuItems a {
   font-size: 25px;
+  font-weight: 600;
   color: var(--color-text);
   text-decoration: none;
 }
 
+@media screen and (max-width: 1680px) {
+  .title {
+    margin-right: 750px;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .title {
+    margin-right: 550px;
+  }
+}
+
+@media screen and (max-width: 1325px) {
+  .title {
+    margin-right: 350px;
+  }
+}
+
+@media screen and (max-width: 1125px) {
+  .title {
+    margin-right: 200px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .title {
+    margin-right: 100px;
+  }
+}
+
 @media screen and (max-width: 830px) {
+  .title {
+    margin-right: 620px;
+  }
+
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -77,5 +113,35 @@
   .menuOpen {
     display: flex;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .title {
+    margin-right: 550px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .title {
+    margin-right: 450px;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .title {
+    margin-right: 400px;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .title {
+    margin-right: 300px;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .title {
+    margin-right: 100px;
   }
 }

@@ -7,9 +7,10 @@ export const HeroBody = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Marcus!</h1>
+        <h1 className={styles.bodytitle}>Hi, I'm Novelius!</h1>
         <p className={styles.description}>
-          I'm a Frontend Developer! Reach out if you want to learn more!
+          I'm a Frontend Developer! Reach out if you want to learn more! I can
+          also talk about books~ :3
         </p>
         <a href="mailto:myemail@email.com" className={styles.contactBtn}>
           Contact me
