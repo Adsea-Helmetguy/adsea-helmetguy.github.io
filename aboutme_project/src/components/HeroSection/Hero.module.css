@@ -59,7 +59,7 @@
   display: flex;
   justify-content: flex-start;
   font-family: var(--font-roboto);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .contactBtn {
@@ -176,7 +176,7 @@
   .description {
     font-size: 25px;
     font-family: var(--font-roboto);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 }
 
@@ -188,7 +188,7 @@
   .description {
     font-size: 20px;
     font-family: var(--font-roboto);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 }
 
@@ -197,8 +197,8 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-left: 0vh;
-    padding-top: 12vh;
-    padding-bottom: 8vh;
+    /* padding-top: 12vh;
+    padding-bottom: 8vh; */
   }
   .content {
     align-items: center;
@@ -214,9 +214,9 @@
     width: 60%; /* Add this - sets a reasonable width for tablets */
     min-width: 30vh; /* Add this - prevents it from getting too small */
   }
-  .programLanguageContainer {
+  /* .programLanguageContainer {
     margin-top: 3vh;
-  }
+  } */
   .contactBtn {
     margin-left: 0px;
   }
@@ -227,8 +227,7 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-left: 0vh;
-    padding-top: 12vh;
-    padding-bottom: 8vh;
+    padding-bottom: 13vh;
   }
 
   .content {
@@ -247,7 +246,7 @@
 @media screen and (max-width: 770px) {
   .container {
     justify-content: flex-start;
-    padding-bottom: 20vh;
+    padding-bottom: 17vh;
   }
   .bodytitle {
     font-size: 50px;
@@ -284,7 +283,7 @@
 @media screen and (max-width: 435px) {
   .container {
     justify-content: flex-start;
-    padding-bottom: 25vh;
+    /* padding-bottom: 25vh; */
   }
   .bodytitle {
     font-size: 30px;
@@ -297,7 +296,7 @@
 @media screen and (max-width: 273px) {
   .container {
     justify-content: flex-start;
-    padding-bottom: 15vh;
+    /* padding-bottom: 15vh; */
   }
   .bodytitle {
     font-size: 30px;
