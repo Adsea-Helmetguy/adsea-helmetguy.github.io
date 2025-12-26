@@ -76,25 +76,23 @@ const SkillsLearnt = () => {
 export const HeroBody = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.topRow}>
-        <div className={styles.content}>
-          <h1 className={styles.bodytitle}>Hi, I'm Novelius!</h1>
-          <p className={styles.description}>
-            I'm a Frontend Developer! I have some experience such as React,
-            Typescript and TailwindCSS! Reach out if you want to learn more! I
-            can also talk about books~ :3
-          </p>
-          <a href="mailto:myemail@email.com" className={styles.contactBtn}>
-            Contact me
-          </a>
-        </div>
-        <img
-          src={getImageUrl("novelius/Novelius_profile.png")}
-          alt="HeroImageProfile"
-          className={styles.heroImg}
-        />
+      <div className={styles.content}>
+        <h1 className={styles.bodytitle}>Hi, I'm Novelius!</h1>
+        <p className={styles.description}>
+          I'm a Frontend Developer! I have some experience such as React,
+          Typescript and TailwindCSS! Reach out if you want to learn more! I can
+          also talk about books~ :3
+        </p>
+        <SkillsLearnt />
+        <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+          Contact me
+        </a>
       </div>
-      <SkillsLearnt />
+      <img
+        src={getImageUrl("novelius/Novelius_profile.png")}
+        alt="HeroImageProfile"
+        className={styles.heroImg}
+      />
       <div className={styles.topBlur} />
       <div className={styles.bottomBlur} />
     </section>
@@ -103,6 +101,39 @@ export const HeroBody = () => {
 
 export default HeroBody;
 
+/*
+
+export const HeroBody = () => {
+  return (
+    <section className={styles.container}>
+      <div className={styles.containerColumn}>
+        <div className={styles.topRow}>
+          <div className={styles.content}>
+            <h1 className={styles.bodytitle}>Hi, I'm Novelius!</h1>
+            <p className={styles.description}>
+              I'm a Frontend Developer! I have some experience such as React,
+              Typescript and TailwindCSS! Reach out if you want to learn more! I
+              can also talk about books~ :3
+            </p>
+            <a href="mailto:myemail@email.com" className={styles.contactBtn}>
+              Contact me
+            </a>
+          </div>
+          <img
+            src={getImageUrl("novelius/Novelius_profile.png")}
+            alt="HeroImageProfile"
+            className={styles.heroImg}
+          />
+        </div>
+        <SkillsLearnt />
+      </div>
+      <div className={styles.topBlur} />
+      <div className={styles.bottomBlur} />
+    </section>
+  );
+};
+*/
+//
 /*
 <div className={styles.programminglanguage}>
         <p className={styles.description}>Programming languages that i use:</p>

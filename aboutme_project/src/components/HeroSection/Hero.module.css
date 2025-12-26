@@ -21,11 +21,11 @@
   z-index: 2;
 }
 
-.topRow {
+.containerColumn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   z-index: 2;
 }
 
@@ -56,7 +56,7 @@
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  margin-bottom: 20px;
 }
 
 .contactBtn {
@@ -166,7 +166,7 @@
   .description {
     font-size: 25px;
     font-family: var(--font-roboto);
-    margin-bottom: 52px;
+    margin-bottom: 20px;
   }
 }
 
@@ -178,7 +178,7 @@
   .description {
     font-size: 20px;
     font-family: var(--font-roboto);
-    margin-bottom: 42px;
+    margin-bottom: 20px;
   }
 }
 
@@ -187,11 +187,11 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-top: 20vh;
+    padding-bottom: 8vh;
   }
 
   .content {
     align-items: center;
-    padding-bottom: 8vh;
   }
   .bodytitle {
     font-size: 82px;
@@ -201,6 +201,9 @@
     width: 60%; /* Add this - sets a reasonable width for tablets */
     min-width: 30vh; /* Add this - prevents it from getting too small */
   }
+  .programLanguageContainer {
+    margin-top: 3vh;
+  }
 }
 
 @media screen and (max-width: 830px) and (min-height: 600px) {
@@ -208,11 +211,11 @@
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-top: 20vh;
+    padding-bottom: 8vh;
   }
 
   .content {
     align-items: center;
-    padding-bottom: 8vh;
   }
   .bodytitle {
     font-size: 82px;
@@ -227,15 +230,13 @@
 @media screen and (max-width: 750px) {
   .container {
     justify-content: flex-start;
+    padding-bottom: 20vh;
   }
   .bodytitle {
     font-size: 50px;
   }
   .description {
     font-size: 20px;
-  }
-  .content {
-    padding-bottom: 20vh;
   }
 }
 
@@ -246,20 +247,14 @@
   .description {
     font-size: 20px;
   }
-  .content {
-    padding-bottom: 20vh;
-  }
 }
 
 @media screen and (max-width: 585px) {
   .bodytitle {
-    font-size: 50px;
+    font-size: 45px;
   }
   .description {
     font-size: 20px;
-  }
-  .content {
-    padding-bottom: 20vh;
   }
 }
 
@@ -270,23 +265,25 @@
 }
 
 @media screen and (max-width: 435px) {
+  .container {
+    justify-content: flex-start;
+    padding-bottom: 25vh;
+  }
   .bodytitle {
     font-size: 30px;
   }
   .description {
     font-size: 15px;
   }
-  .content {
-    padding-bottom: 25vh;
-  }
 }
 
 @media screen and (max-width: 273px) {
+  .container {
+    justify-content: flex-start;
+    padding-bottom: 15vh;
+  }
   .bodytitle {
     font-size: 30px;
-  }
-  .content {
-    padding-bottom: 15vh;
   }
 }
 
