@@ -2,6 +2,22 @@ import { useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils.tsx";
 
+interface NavItemProps {
+  hrefs: string;
+  title: string;
+  classNames?: string;
+}
+
+function NavBarItem({ hrefs, title, classNames = "" }: NavItemProps) {
+  return (
+    <li
+      className={`transition-filter duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150 ${classNames}`}
+    >
+      <a href="#about">{title}</a>
+    </li>
+  );
+}
+
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -25,18 +41,10 @@ export const Navbar = () => {
           className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
           onClick={() => setMenuOpen(false)}
         >
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
+          <NavBarItem hrefs="#about" title="About" />
+          <NavBarItem hrefs="#experience" title="Experience" />
+          <NavBarItem hrefs="#projects" title="Projects" />
+          <NavBarItem hrefs="#contact" title="Contact" />
         </ul>
       </div>
     </nav>

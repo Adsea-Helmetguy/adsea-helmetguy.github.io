@@ -8,6 +8,37 @@ import reactLogo from "../../assets/react.svg";
 import { getImageUrl } from "../../utils";
 import styles from "./Hero.module.css";
 
+interface ProgrammingDetails {
+  classNames?: string;
+  hrefs: string;
+  src: string;
+  altLabel: string;
+  extraImgClass?: string;
+}
+
+function ProgrammingIcons({
+  classNames,
+  hrefs,
+  src,
+  altLabel,
+  extraImgClass = "",
+}: ProgrammingDetails) {
+  return (
+    <div
+      className={`transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150 ${classNames}`}
+    >
+      <a href={hrefs} target="_blank">
+        <img
+          src={src}
+          alt={altLabel}
+          className={`flex justify-center h-25 m-0 p-[1.5em] \
+                      transition-opacity delay-1000 duration-1000 ease-in ${extraImgClass}`}
+        />
+      </a>
+    </div>
+  );
+}
+
 const SkillsLearnt = () => {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
@@ -20,54 +51,34 @@ const SkillsLearnt = () => {
   return (
     <div>
       <p className={styles.description}>Programming languages that i use:</p>
-      <div className={styles.programminglanguage}>
-        <div className="transition-filter duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150">
-          <a href="https://vite.dev" target="_blank">
-            <img
-              src={viteLogo}
-              className={`flex justify-center h-25 m-0 p-[1.5em] \
-                                transition-opacity delay-1000 duration-1000 ease-in ${
-                                  visible ? "opacity-100" : "opacity-0"
-                                }`}
-              alt="ViteLogo"
-            />
-          </a>
-        </div>
-        <div className="transition-filter duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150">
-          <a href="https://www.typescriptlang.org/" target="_blank">
-            <img
-              src={typescriptLogo}
-              className={`flex justify-center h-25 m-0 p-[1.5em] \
-                                transition-opacity delay-1000 duration-1000 ease-in ${
-                                  visible ? "opacity-100" : "opacity-0"
-                                }`}
-              alt="TypescriptLogo"
-            />
-          </a>
-        </div>
-        <div className="transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150">
-          <a href="https://react.dev" target="_blank">
-            <img
-              src={reactLogo}
-              className={`flex justify-center h-25 m-0 p-[1.5em] animate-[spin_20s_linear_infinite] \
-                                transition delay-1000 duration-1000 ease-in ${
-                                  visible ? "opacity-100" : "opacity-0"
-                                }`}
-              alt="ReactLogo"
-            />
-          </a>
-        </div>
-        <div className="transition-all duration-300 ease-in-out animate-pulse hover:animate-none hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150">
-          <a href="https://tailwindcss.com/" target="_blank">
-            <img
-              src={tailwindLogo}
-              className={`flex justify-center h-25 m-0 p-[1.5em]  \
-                                transition delay-1000 duration-1000 ease-in ${
-                                  visible ? "opacity-100" : "opacity-0"
-                                }`}
-            />
-          </a>
-        </div>
+      <div className={`${styles.programminglanguage}`}>
+        <ProgrammingIcons
+          hrefs="https://vite.dev"
+          src={viteLogo}
+          altLabel="ViteLogo"
+          extraImgClass={visible ? "opacity-100" : "opacity-0"}
+        />
+        <ProgrammingIcons
+          hrefs="https://www.typescriptlang.org/"
+          src={typescriptLogo}
+          altLabel="TypescriptLogo"
+          extraImgClass={visible ? "opacity-100" : "opacity-0"}
+        />
+        <ProgrammingIcons
+          hrefs="https://react.dev"
+          src={reactLogo}
+          altLabel="ReactLogo"
+          extraImgClass={`animate-[spin_20s_linear_infinite] ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}
+        />
+        <ProgrammingIcons
+          classNames={`animate-pulse hover:animate-none`}
+          hrefs="https://tailwindcss.com/"
+          src={tailwindLogo}
+          altLabel="tailwindCSSLogo"
+          extraImgClass={visible ? "opacity-100" : "opacity-0"}
+        />
       </div>
     </div>
   );

@@ -31,6 +31,7 @@
 
 .programminglanguage {
   display: flex;
+  gap: 2em;
   flex-direction: row;
   align-items: flex-end;
   color: var(--color-text);
@@ -55,12 +56,17 @@
 
 .description {
   font-size: 30px;
+  display: flex;
+  justify-content: flex-start;
   font-family: var(--font-roboto);
   margin-bottom: 20px;
 }
 
 .contactBtn {
   text-decoration: none;
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-bottom: 0px;
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
@@ -74,6 +80,7 @@
   width: auto;
   max-width: 50%;
   min-width: 10%;
+  padding-left: 3vh;
   z-index: 1;
 
   animation-name: floating;
@@ -156,6 +163,9 @@
     opacity: 20%;
     z-index: -9;
   }
+  .contactBtn {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 1320px) {
@@ -186,16 +196,19 @@
   .container {
     flex-direction: column-reverse;
     justify-content: flex-start;
-    padding-top: 20vh;
+    padding-left: 0vh;
+    padding-top: 12vh;
     padding-bottom: 8vh;
   }
-
   .content {
     align-items: center;
   }
   .bodytitle {
     font-size: 82px;
     font-weight: 900;
+  }
+  .description {
+    justify-content: center;
   }
   .heroImg {
     width: 60%; /* Add this - sets a reasonable width for tablets */
@@ -204,13 +217,17 @@
   .programLanguageContainer {
     margin-top: 3vh;
   }
+  .contactBtn {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 830px) and (min-height: 600px) {
   .container {
     flex-direction: column-reverse;
     justify-content: flex-start;
-    padding-top: 20vh;
+    padding-left: 0vh;
+    padding-top: 12vh;
     padding-bottom: 8vh;
   }
 
@@ -227,7 +244,7 @@
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 770px) {
   .container {
     justify-content: flex-start;
     padding-bottom: 20vh;
