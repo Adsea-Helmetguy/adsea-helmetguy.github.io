@@ -8,12 +8,41 @@ interface NavItemProps {
   classNames?: string;
 }
 
-function NavBarItem({ hrefs, title, classNames = "" }: NavItemProps) {
+//const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+function NavBarPortofilo({ hrefs, title, classNames }: NavItemProps) {
+  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault(); // Prevent default jump
+
+    const targetElement = document.getElementById(hrefs);
+
+    // // Smooth scroll to it
+    targetElement?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <a
+      className={`transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#fff] hover:scale-110 ${classNames}`}
+      href={hrefs}
+      onClick={handleClick}
+    >
+      {title}
+    </a>
+  );
+}
+
+function NavBarItem({ hrefs, title, classNames }: NavItemProps) {
+  // // Get the target element
+  // const targetId = hrefs.replace("#", "");
+  // const targetElement = document.getElementById(targetId);
+
+  // // Smooth scroll to it
+  // targetElement?.scrollIntoView({ behavior: "smooth" });
+
   return (
     <li
-      className={`transition-filter duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150 ${classNames}`}
+      className={`transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150 ${classNames}`}
     >
-      <a href="#about">{title}</a>
+      <a href={hrefs}>{title}</a>
     </li>
   );
 }
@@ -23,9 +52,10 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <a className={styles.title} href="/">
+      {/* <a className={styles.title} href="/">
         Portfoilo
-      </a>
+      </a> */}
+      <NavBarPortofilo hrefs="/" title="Portfoilo" classNames={styles.title} />
       <div className={styles.menu}>
         <img
           className={styles.menuBtn}

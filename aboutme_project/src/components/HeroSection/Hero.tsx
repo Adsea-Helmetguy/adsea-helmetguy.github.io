@@ -92,7 +92,7 @@ export const HeroBody = () => {
         <p className={styles.description}>
           I'm a Frontend Developer! I have some experience such as React,
           Typescript and TailwindCSS! Reach out if you want to learn more! I can
-          also talk about books~ :3
+          also talk about books~
         </p>
         <SkillsLearnt />
         <a href="mailto:myemail@email.com" className={styles.contactBtn}>

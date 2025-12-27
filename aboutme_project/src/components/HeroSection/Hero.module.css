@@ -194,9 +194,7 @@
     justify-content: center;
   }
   .heroImg {
-    width: clamp(180px, 40vh, 55%);
-    max-width: 60%;
-    min-width: 30vh;
+    width: clamp(180px, 40vh, 50%);
     margin-left: 0vh;
   }
   .contactBtn {
