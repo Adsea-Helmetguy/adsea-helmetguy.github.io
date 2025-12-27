@@ -39,6 +39,7 @@
 }
 
 .bodytitle {
+  white-space: nowrap;
   font-size: 72px;
   font-weight: 900;
   margin-bottom: 0px;
@@ -56,17 +57,19 @@
 
 .description {
   font-size: 30px;
+  max-width: 100vh;
+  text-align: left;
   display: flex;
   justify-content: flex-start;
   font-family: var(--font-roboto);
-  /* margin-bottom: 20px; */
+  margin-bottom: 3vh;
 }
 
 .contactBtn {
   text-decoration: none;
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-bottom: 0px;
+  margin-top: 7vh;
+  margin-left: 0px;
+  margin-bottom: 0vh;
   background-color: var(--color-primary);
   color: var(--color-text);
   border-radius: 100px;
@@ -78,9 +81,9 @@
 
 .heroImg {
   width: auto;
-  max-width: 50%;
+  max-width: 60%;
   min-width: 10%;
-  padding-left: 3vh;
+  margin-left: 5vh;
   z-index: 1;
 
   animation-name: floating;
@@ -129,27 +132,7 @@
   z-index: 0;
 }
 
-@media screen and (max-width: 830px) and (max-height: 470px) {
-  /* Lock all sizes - they won't shrink anymore */
-  .bodytitle {
-    opacity: 10%;
-    z-index: -9;
-  }
-  .description {
-    opacity: 20%;
-    z-index: -9;
-  }
-  .heroImg {
-    width: 40vh !important;
-    opacity: 20%;
-    z-index: -9;
-  }
-  .content {
-    align-items: center !important;
-  }
-}
-
-@media screen and (min-width: 830px) and (max-height: 630px) {
+@media screen and (min-width: 831px) and (max-height: 630px) {
   /* Lock all sizes - they won't shrink anymore */
   .bodytitle {
     opacity: 10%;
@@ -196,9 +179,7 @@
   .container {
     flex-direction: column-reverse;
     justify-content: flex-start;
-    padding-left: 0vh;
-    /* padding-top: 12vh;
-    padding-bottom: 8vh; */
+    padding-bottom: 3vh;
   }
   .content {
     align-items: center;
@@ -208,26 +189,53 @@
     font-weight: 900;
   }
   .description {
+    max-width: 300vh;
+    text-align: center;
     justify-content: center;
   }
   .heroImg {
-    width: 60%; /* Add this - sets a reasonable width for tablets */
-    min-width: 30vh; /* Add this - prevents it from getting too small */
+    width: clamp(180px, 40vh, 55%);
+    max-width: 60%;
+    min-width: 30vh;
+    margin-left: 0vh;
   }
-  /* .programLanguageContainer {
-    margin-top: 3vh;
-  } */
   .contactBtn {
     margin-left: 0px;
   }
 }
 
-@media screen and (max-width: 830px) and (min-height: 600px) {
+@media screen and (max-width: 830px) and (max-height: 925px) {
+  .heroImg {
+    opacity: 20%;
+    z-index: -9;
+  }
+  .content {
+    align-items: center !important;
+  }
+}
+
+@media screen and (max-width: 830px) and (max-height: 455px) {
+  /* Lock all sizes - they won't shrink anymore */
+  .bodytitle {
+    opacity: 10%;
+    z-index: -9;
+  }
+  .description {
+    opacity: 20%;
+    z-index: -9;
+  }
+  .content {
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 830px) and (min-height: 600px) {
   .container {
     flex-direction: column-reverse;
     justify-content: flex-start;
     padding-left: 0vh;
-    padding-bottom: 13vh;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
   }
 
   .content {
@@ -238,15 +246,15 @@
     font-weight: 900;
   }
   .heroImg {
-    width: 60%; /* Add this - sets a reasonable width for tablets */
-    min-width: 30vh; /* Add this - prevents it from getting too small */
+    width: 60%;
+    min-width: 30vh;
   }
-}
+} */
 
 @media screen and (max-width: 770px) {
   .container {
     justify-content: flex-start;
-    padding-bottom: 17vh;
+    padding-bottom: 7vh;
   }
   .bodytitle {
     font-size: 50px;
