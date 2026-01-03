@@ -50,7 +50,9 @@ const SkillsLearnt = () => {
   }, []);
   return (
     <div>
-      <p className={styles.description}>Programming languages that i use:</p>
+      <p className={styles.programLanguagedescription}>
+        Programming languages that i use:
+      </p>
       <div className={`${styles.programminglanguage}`}>
         <ProgrammingIcons
           hrefs="https://vite.dev"

@@ -13,8 +13,8 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Projects } from "./components/Projects/Projects";
 */
 import { Navbar } from "./components/Navbar/NavbarTutorial.tsx";
-//import { AppBody } from "./components/Body.tsx";
 import { HeroBody } from "./components/HeroSection/Hero.tsx";
+import { ContactMe } from "./components/Contact/Contact.tsx";
 import styles from "./App.module.css";
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
       <div className={styles.App}>
         <Navbar />
         <HeroBody />
+        <ContactMe />
       </div>
     </>
   );

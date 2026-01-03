@@ -65,6 +65,18 @@
   margin-bottom: 3vh;
 }
 
+.programLanguagedescription {
+  white-space: nowrap;
+  font-size: 30px;
+  font-weight: 500;
+  max-width: 100vh;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-roboto);
+  margin-bottom: 1vh;
+}
+
 .contactBtn {
   text-decoration: none;
   margin-top: 7vh;
