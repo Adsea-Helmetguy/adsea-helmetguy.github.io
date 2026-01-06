@@ -51,7 +51,7 @@ const SkillsLearnt = () => {
   return (
     <div>
       <p className={styles.programLanguagedescription}>
-        Programming languages that i use:
+        Programming languages used here
       </p>
       <div className={`${styles.programminglanguage}`}>
         <ProgrammingIcons

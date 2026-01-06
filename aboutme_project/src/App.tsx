@@ -14,6 +14,7 @@ import { Projects } from "./components/Projects/Projects";
 */
 import { Navbar } from "./components/Navbar/NavbarTutorial.tsx";
 import { HeroBody } from "./components/HeroSection/Hero.tsx";
+import { Experience } from "./components/Experience/Experience.tsx";
 import { ContactMe } from "./components/Contact/Contact.tsx";
 import styles from "./App.module.css";
 
@@ -23,6 +24,7 @@ function App() {
       <div className={styles.App}>
         <Navbar />
         <HeroBody />
+        <Experience />
         <ContactMe />
       </div>
     </>
