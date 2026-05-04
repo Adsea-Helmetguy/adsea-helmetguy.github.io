@@ -2,48 +2,8 @@ import styles from "./Experience.module.css";
 import skills from "../../data/skills.json";
 //import history from "../../data/history.json";
 import { getImageUrl } from "../../utils";
-import { useEffect, useState } from "react";
-
-interface programmingInteface {
-  classNames?: string;
-  hrefs: string;
-  src: string;
-  altLabel: string;
-  extraImgClass?: string;
-}
-
-function ProgrammingIcons({
-  classNames,
-  hrefs,
-  src,
-  altLabel,
-  extraImgClass = "",
-}: programmingInteface) {
-  return (
-    <div
-      className={`transition-all duration-300 ease-in-out hover:drop-shadow-[0_0_2em_#6366f1aa] hover:scale-150 ${classNames}`}
-    >
-      <a href={hrefs} target="_blank">
-        <img
-          src={src}
-          alt={altLabel}
-          className={`flex justify-center h-25 m-0 p-[1.5em] \
-                        transition-opacity delay-1000 duration-1000 ease-in ${extraImgClass}`}
-        />
-      </a>
-    </div>
-  );
-}
 
 const SkillsLearnt = () => {
-  const [visible, setVisible] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(true); // triggers re-render with opacity-100
-    }, 50); // 50ms delay
-
-    return () => clearTimeout(timer); // cleanup if component unmounts
-  }, []);
   return (
     <div>
       <div className={styles.content}>
